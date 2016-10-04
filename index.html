@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>T CUP | Coffee + Tea | Fountain Valley, CA</title>
+	<link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Oswald|Roboto" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="css/creative.css" rel="stylesheet">
-
-
-	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body>
 
 	<section class="header">
 		<div class="logo"></div>
-		<h1><span>TCUP |</span> Drinks <span>|</span> Food <span>| Fountain Valley, CA</span></h1>
 	</section>
 
+	<section class="tagline">
+		<h1><span>T Cup |</span> Drinks <span>|</span> Food <span>| Fountain Valley, CA</span></h1>
+	</section>
+
+	<section class="slideshow">
+		<div><img src="./img/IMG_2352.jpg"></div>
+		<div><img src="./img/IMG_2171.jpg"></div>
+		<div><img src="./img/IMG_2443.jpg"></div>
+		<div><img src="./img/IMG_0687.jpg"></div>
+		<div><img src="./img/IMG_0688.jpg"></div>
+		<div><img src="./img/IMG_2396.jpg"></div>
+		<div><img src="./img/IMG_0675.jpg"></div>
+		<div><img src="./img/unnamed.jpg"></div>
+		<div><img src="./img/IMG_2303.jpg"></div>
+	</section>
 
 	<section class="menu">
 
@@ -161,7 +175,7 @@
 						<h3>Food</h3>
 						<ul>
 							<li>Cajun Fries</li>
-							<li>Tcup Fried Rice</li>
+							<li>T Cup Fried Rice</li>
 							<li>Fried Wontons</li>
 							<li>Jalapeno Poppers</li>
 							<li>Onion Rings</li>
@@ -169,7 +183,6 @@
 							<li>Candied Chicken</li>
 							<li>Ramen Burger</li>
 							<li>Sweet Treats</li>
-							<li>Chcolate Lava Cake w/ Ice Cream</li>
 						</ul>
 					</div> <!-- /food -->
 				</div>
@@ -203,5 +216,21 @@
 		</div>
 	</section>
 	
+
+	<script>
+	$(".slideshow > div:gt(0)").hide();
+
+	setInterval(function() { 
+	  $('.slideshow > div:first')
+	    .fadeOut(1000)
+	    .next()
+	    .fadeIn(1000)
+	    .end()
+	    .appendTo('.slideshow');
+	},  3000);
+
+	</script>
+
+
 </body>
 </html>
